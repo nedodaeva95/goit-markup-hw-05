@@ -30,14 +30,14 @@
         >
         <nav>
           <ul class="navigation-list">
-            <li class="navigation current">
-              <a href="./index.html">Studio</a>
+            <li class="navigation">
+              <a class="nav-link current" href="./index.html">Studio</a>
             </li>
             <li class="navigation">
-              <a href="./portfolio.html">Portfolio</a>
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="navigation">
-              <a href="">Contacts</a>
+              <a class="nav-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -59,7 +59,16 @@
       <section class="page-web-studio">
         <div class="corntainer">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>Order Service</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal-btn" data-modal-close>
+              <svg wight="8px" height="8px" class="svg-close" >
+                <use href="./images/icons-hw-4.svg#icon-close-black-18dp-2-1"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -425,5 +434,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+  </body>
   </body>
 </html>
