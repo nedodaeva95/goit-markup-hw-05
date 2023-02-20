@@ -661,15 +661,16 @@ footer {
 .overlay-paragrafe {
   position: absolute;
   top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   padding: 40px 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  height: 100%;
   background-color: rgba(77, 90, 229, 1);
-
   transform: translateY(100%);
   transition: transform 250ms linear;
   overflow: auto;
